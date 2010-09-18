@@ -4,7 +4,7 @@ Name:		ibacm
 Version:	1.0.3
 Release:	1
 License:	BSD or GPL v2
-Group:		Libraries
+Group:		Networking/Utilities
 Source0:	http://www.openfabrics.org/downloads/rdmacm/%{name}-%{version}.tar.gz
 # Source0-md5:	a4f808580e680f23f26396b9baf9c251
 URL:		http://www.openfabrics.org/
