@@ -1,12 +1,13 @@
+# TODO: PLDize init script
 Summary:	InfiniBand Communication Manager Assistant
 Summary(pl.UTF-8):	Asystent zarządzania komunikacją InfiniBand
 Name:		ibacm
-Version:	1.0.5
+Version:	1.0.6
 Release:	1
 License:	BSD or GPL v2
 Group:		Networking/Utilities
 Source0:	http://www.openfabrics.org/downloads/rdmacm/%{name}-%{version}.tar.gz
-# Source0-md5:	5d0504132d12fb39c5dce750380b6456
+# Source0-md5:	a07021f1348a460ddc575b7edf6727f1
 URL:		http://www.openfabrics.org/
 BuildRequires:	libibverbs-devel
 BuildRequires:	libibumad-devel
@@ -51,11 +52,12 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS COPYING README
 %attr(755,root,root) %{_bindir}/ib_acme
-%attr(755,root,root) %{_sbindir}/ib_acm
-%{_mandir}/man1/ib_acm.1*
+%attr(755,root,root) %{_sbindir}/ibacm
+#%attr(754,root,root) /etc/rc.d/init.d/ibacm
+%{_mandir}/man1/ibacm.1*
 %{_mandir}/man1/ib_acme.1*
 
 %files devel
 %defattr(644,root,root,755)
 %{_includedir}/infiniband/acm.h
-%{_mandir}/man7/ib_acm.7*
+%{_mandir}/man7/ibacm.7*
