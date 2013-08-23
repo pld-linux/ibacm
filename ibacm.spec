@@ -2,12 +2,12 @@
 Summary:	InfiniBand Communication Manager Assistant
 Summary(pl.UTF-8):	Asystent zarządzania komunikacją InfiniBand
 Name:		ibacm
-Version:	1.0.7
+Version:	1.0.8
 Release:	1
 License:	BSD or GPL v2
 Group:		Networking/Utilities
 Source0:	http://www.openfabrics.org/downloads/rdmacm/%{name}-%{version}.tar.gz
-# Source0-md5:	f0994de8564a4f6061b73227ff5438d4
+# Source0-md5:	32b36165a4ae7b6c1a37364205eb4be7
 URL:		http://www.openfabrics.org/
 BuildRequires:	libibverbs-devel
 BuildRequires:	libibumad-devel
@@ -37,6 +37,7 @@ Pliki nagłówkowe usługi IB ACM.
 
 %build
 %configure \
+	rdmascript=rdma \
 	--disable-silent-rules
 %{__make}
 
