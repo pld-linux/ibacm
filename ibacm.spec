@@ -1,9 +1,10 @@
+# NOTE: for versions >= 17 see rdma-core.spec
 # TODO: PLDize init script
 Summary:	InfiniBand Communication Manager Assistant
 Summary(pl.UTF-8):	Asystent zarządzania komunikacją InfiniBand
 Name:		ibacm
 Version:	1.2.1
-Release:	1
+Release:	1.1
 License:	BSD or GPL v2
 Group:		Networking/Utilities
 Source0:	https://www.openfabrics.org/downloads/rdmacm/%{name}-%{version}.tar.gz
